@@ -42,7 +42,8 @@ def hit?(total)
   prompt_user
   input = get_user_input
   
-  while input != 'h' && input != 's'
+  while input != 'h' && input != 's' do
+    
   
   
   if input == 'h'
