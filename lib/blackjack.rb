@@ -44,7 +44,8 @@ def hit?(total)
   
   while input != 'h' && input != 's' do
     invalid_command
-  
+    input = get_user_input
+  end
   
   if input == 'h'
     total += deal_card
