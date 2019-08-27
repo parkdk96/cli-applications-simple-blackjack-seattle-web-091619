@@ -44,6 +44,8 @@ def hit?(total)
   
   case input
     when 'h'
+      total += deal_card
+    return total
   
   if input == 'h'
     total += deal_card
