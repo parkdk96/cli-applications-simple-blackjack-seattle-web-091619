@@ -43,7 +43,7 @@ def hit?(total)
   input = get_user_input
   
   case input
-  
+    when 'h'
   
   if input == 'h'
     total += deal_card
