@@ -43,7 +43,7 @@ def hit?(total)
   input = get_user_input
   
   while input != 'h' && input != 's' do
-    
+    invalid_command
   
   
   if input == 'h'
