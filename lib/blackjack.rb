@@ -46,16 +46,11 @@ def hit?(total)
     invalid_command
   end
   
-  case input
-    when 'h'
-      total += deal_card
-      return total
-    when 's'
-      return total
-    else
-      until input == 'h' && input == 's'
-        invalid_command
-      end
+  if input == 'h'
+    total += deal_card
+    return total
+  else
+    return total 
   end
 end
 
