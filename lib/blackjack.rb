@@ -50,13 +50,8 @@ def hit?(total)
   if input == 'h'
     total += deal_card
     return total
-  elsif input == 's'
-    return total 
-  else
-    while input != 'h' && input != 's' do
-      invalid_command
-    end
   end
+  return total
 end
 
 def invalid_command
