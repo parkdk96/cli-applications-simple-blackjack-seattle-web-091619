@@ -42,7 +42,8 @@ def hit?(total)
   prompt_user
   input = get_user_input
   
-  while input !=
+  while input != 'h' && input != 's'
+  
   
   if input == 'h'
     total += deal_card
