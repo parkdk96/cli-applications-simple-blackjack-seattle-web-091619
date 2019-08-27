@@ -23,12 +23,18 @@ def get_user_input
   return gets.chomp
 end
 
-def end_game
+def end_game(total)
   # code #end_game here
+  puts "Sorry, you hit #{total}. Thanks for playing!"
 end
 
 def initial_round
   # code #initial_round here
+  card1 = deal_card
+  card2 = deal_card
+  sum = card1 + card2
+  display_card_total(sum)
+  return sum
 end
 
 def hit?
@@ -37,6 +43,8 @@ end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
+  prompt_user
 end
 
 #####################################################
