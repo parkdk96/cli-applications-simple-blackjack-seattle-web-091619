@@ -42,6 +42,8 @@ def hit?(total)
   prompt_user
   input = get_user_input
   
+  
+  
   case input
     when 'h'
       total += deal_card
@@ -49,7 +51,9 @@ def hit?(total)
     when 's'
       return total
     else
-      invalid_command
+      until input == 'h' || input == 's'
+        invalid_command
+      end
   end
 end
 
